@@ -10,6 +10,7 @@ function App() {
 
 
   const search = event => {
+    event.preventDefault();
     let url = "https://en.wikipedia.org/w/api.php";
 
     let params = {
@@ -19,7 +20,7 @@ function App() {
       format: "json"
     }
 
-    if (event.key === "Enter") {
+    
       url = url + "?origin=*";
 
       Object.keys(params).forEach((key) => url += '&' + key + '=' + params[key]);
@@ -35,20 +36,24 @@ function App() {
           setIsLoaded(false);
         })
         .catch(error => console.log(error));
-    }
+    
   }
 
   return (
     <div className="App">
       <div className="search-box">
-          <input 
-            type="text" 
-            className="search-bar" 
-            placeholder="Search..."
-            onChange={e => setSearchQuery(e.target.value)}
-            value={searchQuery}
-            onKeyPress={search}
-            />
+        <form onSubmit={search}>
+            <input 
+              type="text" 
+              className="search-bar" 
+              placeholder="Search..."
+              onChange={e => setSearchQuery(e.target.value)}
+              value={searchQuery}
+              
+              />
+
+              <input type="submit" value="Submit" />
+        </form>
         </div>
           <div>
             {(wikiData.length > 0 && isLoaded === false) ? (
