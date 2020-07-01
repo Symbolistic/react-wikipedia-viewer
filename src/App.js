@@ -30,7 +30,6 @@ function App() {
         .then(res => res.json())
         .then(response => {
           console.log("Exists! Success!");
-          //console.log(response.query.pages)
           setSearchQuery('');
           setWikiData(Object.entries(response.query.pages).map(val => val[1]));
         })
