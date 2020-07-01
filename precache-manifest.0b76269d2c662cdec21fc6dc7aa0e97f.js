@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b598c0c6a20d61efd13c34889fcec597",
+    "revision": "3e0ae1eeb5f334c2f3c2a9b2b6c73712",
     "url": "/react-wikipedia-viewer/index.html"
   },
   {
-    "revision": "2efca413898eaf51d7be",
-    "url": "/react-wikipedia-viewer/static/css/main.cfa69580.chunk.css"
+    "revision": "cdb240ec3ed2023376fe",
+    "url": "/react-wikipedia-viewer/static/css/main.ad295933.chunk.css"
   },
   {
     "revision": "fb8fcf52f5baef161c5c",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-wikipedia-viewer/static/js/2.5b71efd2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2efca413898eaf51d7be",
+    "revision": "cdb240ec3ed2023376fe",
     "url": "/react-wikipedia-viewer/static/js/main.64e00269.chunk.js"
   },
   {
