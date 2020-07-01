@@ -50,7 +50,7 @@ a {
 }
 
 .search-box:hover > .search-bar {
-  width: 150px;
+  width: 140px;
   padding: 0 7px;
   outline: #fff;
   border: 1px solid #36c;
@@ -58,7 +58,7 @@ a {
 }
 
 .search-boxTOP:hover > .search-bar {
-  width: 150px;
+  width: 120px;
   padding: 0 7px;
   outline: #fff;
   border: 1px solid #36c;
