@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
-
-
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -21,7 +21,7 @@ function App() {
       format: "json"
     }
 
-    if (event.key === "Enter") {
+    if (event.key === "Enter" || event.type === "click") {
       url = url + "?origin=*";
 
       Object.keys(params).forEach((key) => url += '&' + key + '=' + params[key]);
@@ -41,7 +41,8 @@ function App() {
   return (
     <div className="App">
       <h1 id="title">Wikipedia Viewer</h1>
-      <div className="search-box">
+      <div className={wikiData.length > 0 ? "search-boxTOP" : "search-box"}>
+
           <input 
             type="text" 
             className="search-bar" 
@@ -50,16 +51,18 @@ function App() {
             value={searchQuery}
             onKeyPress={search}
             />
+
+            <button id="submit" className="search-btn" type="submit" onClick={search}><FontAwesomeIcon icon={faSearch} /></button>
         </div>
-          <div>
+          <div id="wiki-data">
             {(wikiData.length > 0) ? (
               wikiData.map((val) => {
 
                 return (
-                  <div key={val.pageid}>
-                    <h2>{val.title}</h2>
-                    <p>{val.extract}</p>
-                  </div>
+                  <a key={val.pageid} className="results" href={`https://en.wikipedia.org/wiki/${val.title}`}><div>
+                    <h2 className="result-title">{val.title}</h2>
+                    <p className="result-info">{val.extract}</p>
+                  </div></a>
                 );
               })
             ) : ('')}

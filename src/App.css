@@ -10,6 +10,13 @@
 
 #title {
   text-align: center;
+  margin-top: 10px;
+  font-size: 3em;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
 }
 
 .search-box {
@@ -17,16 +24,105 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background: none;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 10px;
+  padding: 5px;
+  transition: 0.4s ease-in-out;  
+}
+
+.search-boxTOP {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  height: 50px;
+  border-radius: 30px;
+  padding: 5px;
+  transition: 0.4s ease-in-out;  
+}
+
+.search-box:hover > .search-bar {
+  width: 150px;
+  padding: 0 7px;
+  outline: #fff;
+  border: 1px solid #36c;
+  border-radius: 30px
+}
+
+.search-boxTOP:hover > .search-bar {
+  width: 150px;
+  padding: 0 7px;
+  outline: #fff;
+  border: 1px solid #36c;
+  border-radius: 30px
+}
+
+.search-btn {
+  color: #fff;
+  float:right;
+  width:40px;
+  height: 40px;
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: #36c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
 }
 
 .search-bar {
-  height: 50px;
-  width: 400px;
-  padding: 0 20px;
-  border-radius: 50%;
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0px;
+  color: black;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
 }
 
-.search-bar::before {
-  content: "\f002";
-  font-family: 'FontAwesome';
+#wiki-data {
+  margin-top: 100px;
+  display: grid;
+  justify-items: center;
+}
+
+.results {
+  padding: 30px;
+  margin: 20px 10px;
+  border: 1px solid #eee;
+  box-shadow: 0px 8px 15px rgba(0,0,0,0.3);
+  transition: 0.2s ease-in-out; 
+  width: 90%;
+}
+
+.results:hover {
+  border: 1px solid #36c;
+  box-shadow: 0px 8px 15px rgba(51, 102, 204, 0.8);
+}
+
+.result-title {
+  margin-bottom: 20px
+}
+
+.result.info {
+  letter-spacing: 1px; 
+}
+
+@media screen and (min-width: 600px) {
+
+  .search-boxTOP {
+    top: 15%;
+  }
+  
+  .results {
+    width:65%;
+  }
 }
