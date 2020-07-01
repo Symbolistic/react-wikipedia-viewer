@@ -40,6 +40,7 @@ function App() {
   return (
     <div className="App">
       <h1 id="title">Wikipedia Viewer</h1>
+      <h3 id="random-article"><a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" rel="noopener noreferrer">Click here for a random article!</a></h3>
       <div className={wikiData.length > 0 ? "search-boxTOP" : "search-box"}>
 
           <input 
@@ -58,7 +59,7 @@ function App() {
               wikiData.map((val) => {
 
                 return (
-                  <a key={val.pageid} className="results" href={`https://en.wikipedia.org/wiki/${val.title}`}><div>
+                  <a key={val.pageid} className="results" href={`https://en.wikipedia.org/wiki/${val.title}`} target="_blank" rel="noopener noreferrer"  ><div>
                     <h2 className="result-title">{val.title}</h2>
                     <p className="result-info">{val.extract}</p>
                   </div></a>
