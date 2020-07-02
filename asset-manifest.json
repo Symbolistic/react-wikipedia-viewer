@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-wikipedia-viewer/static/css/main.ad295933.chunk.css",
+    "main.css": "/react-wikipedia-viewer/static/css/main.6756dbb3.chunk.css",
     "main.js": "/react-wikipedia-viewer/static/js/main.64e00269.chunk.js",
     "main.js.map": "/react-wikipedia-viewer/static/js/main.64e00269.chunk.js.map",
     "runtime-main.js": "/react-wikipedia-viewer/static/js/runtime-main.ebb8af26.js",
@@ -8,15 +8,15 @@
     "static/js/2.5b71efd2.chunk.js": "/react-wikipedia-viewer/static/js/2.5b71efd2.chunk.js",
     "static/js/2.5b71efd2.chunk.js.map": "/react-wikipedia-viewer/static/js/2.5b71efd2.chunk.js.map",
     "index.html": "/react-wikipedia-viewer/index.html",
-    "precache-manifest.0b76269d2c662cdec21fc6dc7aa0e97f.js": "/react-wikipedia-viewer/precache-manifest.0b76269d2c662cdec21fc6dc7aa0e97f.js",
+    "precache-manifest.ea6bac03c0a4c1bdf83b571a9496fade.js": "/react-wikipedia-viewer/precache-manifest.ea6bac03c0a4c1bdf83b571a9496fade.js",
     "service-worker.js": "/react-wikipedia-viewer/service-worker.js",
-    "static/css/main.ad295933.chunk.css.map": "/react-wikipedia-viewer/static/css/main.ad295933.chunk.css.map",
+    "static/css/main.6756dbb3.chunk.css.map": "/react-wikipedia-viewer/static/css/main.6756dbb3.chunk.css.map",
     "static/js/2.5b71efd2.chunk.js.LICENSE.txt": "/react-wikipedia-viewer/static/js/2.5b71efd2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ebb8af26.js",
     "static/js/2.5b71efd2.chunk.js",
-    "static/css/main.ad295933.chunk.css",
+    "static/css/main.6756dbb3.chunk.css",
     "static/js/main.64e00269.chunk.js"
   ]
 }
